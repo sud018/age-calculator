@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>age calculator</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h2 text-center text-danger>calculate age from date of birth to current age</h2>
+    <div class="d-flex justify-content-center bg-dark p-5 s">
+    <div style="background-color: #f9563a;" class="p-5">
+    <form name="calcform" autocomplete="off">
+
+      <h3>date of birth: </h3>
+      <tr>
+        <td>
+          <select id="month1" class="" name="form-control form-control lg">
+            <option>january</option>
+            <option>febuary</option>
+            <option>march</option>
+            <option>april</option>
+            <option>may</option>
+            <option>june</option>
+            <option>july</option>
+            <option>august</option>
+            <option>september</option>
+            <option>october</option>
+            <option>november</option>
+            <option>december</option>
+          </select>
+        </td>
+        <td>
+        <select id="date1" class="" name="">
+
+        </select>
+        </td>
+        <td><input type="number" id="byear" placeholder="year"></td>
+      </tr>
+
+        <h3>age at the date of: </h3>
+        <tr>
+          <td>
+            <select id="month2" class="" name="form-control form-control lg">
+              <option>january</option>
+              <option>febuary</option>
+              <option>march</option>
+              <option>april</option>
+              <option>may</option>
+              <option>june</option>
+              <option>july</option>
+              <option>august</option>
+              <option>september</option>
+              <option>october</option>
+              <option>november</option>
+              <option>december</option>
+            </select>
+          </td>
+          <td>
+          <select id="date2" class="" name="">
+
+          </select>
+          </td>
+          <td><input type="number" id="pyear" placeholder="year"></td>
+        </tr>
+        <div>
+        <input type="button" value="calculate" class = "btn-success text-white gap cal">
+        <input type="reset" value="reset" class = "btn-warning text-white">
+         </div>
+         <tr>
+           <td>Age result: </td>
+         </tr>
+         <tr>
+           <div id="age" rows="6" class="form-control form-control-lg bg-dark text-light pre-scrollable">
+
+           </div>
+         </tr>
+    </form>
+    </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
